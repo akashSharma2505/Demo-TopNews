@@ -1,0 +1,57 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "packageName": "SpFxTeamsTogetherWebPart",
+    "id": "b8791414-9587-5a79-9990-62c310f78a2d",
+    "version": "0.1",
+    "developer": {
+      "name": "Demo developer",
+      "websiteUrl": "https://products.office.com/sharepoint/collaboration",
+      "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+      "termsOfUseUrl": "https://www.microsoft.com/servicesagreement"
+    },
+    "name": {
+      "short": "SPFx Teams Together"
+    },
+    "description": {
+      "short": "SPFx Teams Together short description",
+      "full": "SPFx Teams Together long description"
+    },
+    "icons": {
+      "outline": "b7771434-9587-4a79-9990-48c310f78a3d_outline.png",
+      "color": "b7771434-9587-4a79-9990-48c310f78a3d_color.png"
+    },
+    "accentColor": "#004578",
+    "staticTabs": [
+      {
+        "entityId": "com.contoso.personaltab.spfx",
+        "name": "My SPFx Personal Tab",
+        "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=50ef7075-1c74-4b40-809b-6aad4b4e2445%26forceLocale={locale}",
+        "scopes": [
+          "personal"
+        ]
+      }
+    ],
+    "configurableTabs": [
+      {
+        "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=b7771434-9587-4a79-9990-48c310f78a3d%26forceLocale={locale}",
+        "canUpdateConfiguration": true,
+        "scopes": [
+          "team"
+        ]
+      }
+    ],
+    "validDomains": [
+      "*.login.microsoftonline.com",
+      "*.sharepoint.com",
+      "*.sharepoint-df.com",
+      "spoppe-a.akamaihd.net",
+      "spoprod-a.akamaihd.net",
+      "resourceseng.blob.core.windows.net",
+      "msft.spoppe.com"
+    ],
+    "webApplicationInfo": {
+      "resource": "https://{teamSiteDomain}",
+      "id": "00000003-0000-0ff1-ce00-000000000000"
+    }
+  }
